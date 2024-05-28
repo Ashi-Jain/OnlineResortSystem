@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="ResortDbModelStoreContainer" CdmEntityContainer="AmenityEntities">
+    <EntitySetMapping Name="Amenities">
+      <EntityTypeMapping TypeName="ResortDbModel.Amenity">
+        <MappingFragment StoreEntitySet="Amenities">
+          <ScalarProperty Name="AmenityId" ColumnName="AmenityId" />
+          <ScalarProperty Name="AmenityName" ColumnName="AmenityName" />
+          <ScalarProperty Name="AmenityDescription" ColumnName="AmenityDescription" />
+          <ScalarProperty Name="AmenityCategory" ColumnName="AmenityCategory" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

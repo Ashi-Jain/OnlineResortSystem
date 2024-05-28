@@ -1,0 +1,42 @@
+﻿@model OnlineResortSystem.Models.Amenity
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Amenity</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.AmenityName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AmenityName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.AmenityDescription)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AmenityDescription)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.AmenityCategory)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AmenityCategory)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.AmenityId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
